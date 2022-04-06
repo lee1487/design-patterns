@@ -55,5 +55,31 @@ https://codingdog.tistory.com/entry/java-synchronized-%EB%9D%BD%EC%9D%B4-%EC%96%
   - 구체적인 클래스 타입을 알지 못해도, 그 클래스의 메서드, 타입, 변수들에 접근 할 수 있도록 해주는 자바 API 
 2. setAccessible(true)를 사용하는 이유는? 
   - 기본 생성자는 이 예제에서 private로 선언되어 있다.  즉 외부에서는 호출할 수 없다는 것인데, 
-    setAccessible(true)를 통해 Constructor<Settings5>타입으로 받은 constructor, 기본생성자를 사용가능하게해 newInstance()를 사용해 새로운 객체를 만들 수 있게하기 때문이다
+    setAccessible(true)를 통해 Constructor<Settings5>타입으로 받은 constructor, 
+	기본생성자를 사용가능하게해 newInstance()를 사용해 새로운 객체를 만들 수 있게하기 때문이다
+
+싱글톤 패턴 구현 깨트리는 방법2
+1. 자바의 직렬화 & 역직렬화에 대해 설명하세요.
+  - 직렬화는 자바 시스템 내부에서 사용되는 Object 또는 Data를 외부의 자바 시스템에서도 사용할 수 있도록
+    byte 형태로 데이터를 변환하는 기술이며 역직렬화는 byte로 변환된 Data를 원래대로 Object나 Data로 변환하는 기술이다
+2. Serializable Id란 무엇이며 왜 쓰는가?
+  - Serializable를 상속받는 경우 클래스의 버전관리를 위해 serialVersionUID를 사용한다.  
+    이 serialVersionUID변수를 명시적으로 선언해 주지 않으면 컴파일러가 계산한 값을 부여하는데 
+	Serializable Class 또는 Outer Class에 변경이 있으면 serialVersionUID값이 바뀌게 된다.  
+	만약 Serialize할 때와 Deserialize할 때의 serialVersionUID 값이 다르면 
+	InvalidClassExcepions가 발생하여 저장된 값을 객체로 Restore 할 수 없다
+3. try-resource 블럭에 대해 설명하세요.
+  - try-resource 블럭은 기존의 try-catch-final 블럭에서 사용하고 꼭 종료해줘야 하는 
+    resource를 사용할 때 final 블럭에서 resource를 해제하는데, 
+	try-resource 블럭을 사용하면 따로 명시적으로 resource를 해제해주지 않아도 자동으로 해제해 준다
+
+싱글톤 (Singleton) 패턴 구현 방법 6
+1. enum 타입의 인스턴스를 리플랙션을 만들 수 있는가?
+  - enum 타입은 리플랙션을 할 수 없도록 막혀있어서 리플랙션에 안전하다.
+2. enum으로 싱글톤 타입을 구현할 때의 단점은?
+  - 인스턴스를 미리 생성해야하며 상속이 불가하다. 클래스가 메모리에 할당되는 시점에 인스턴스가 미리 만들어진다. 
+    초기화 시점이 문제가 되지 않다면 가장 안전한 방법이다.
+3. 직렬화 & 역직렬화 시에 별도로 구현해야 하는 메소드가 있는가?
+  - enum 타입은 enum 클래스를 상속받게 되는데, enum 클래스는 Serializable을 
+    이미 구현하고 있기 때문에 추가적인 구현이 필요 없다.
 ```
