@@ -1,4 +1,4 @@
-package com.patterns.creationalpatterns.singleton;
+package com.patterns.creationalpatterns.singleton.part1;
 
 public class Settings5 {
 
