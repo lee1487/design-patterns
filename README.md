@@ -83,3 +83,11 @@ https://codingdog.tistory.com/entry/java-synchronized-%EB%9D%BD%EC%9D%B4-%EC%96%
   - enum 타입은 enum 클래스를 상속받게 되는데, enum 클래스는 Serializable을 
     이미 구현하고 있기 때문에 추가적인 구현이 필요 없다.
 ```
+
+### 팩토리 메소드(Factory method) 패턴
+```
+팩토리 메소드 패턴 
+  - 구체적으로 어떤 인스턴스를 만들지는 서브 클래스가 정한다 
+    - 다양한 구현체(Product)가 있고, 그중에서 특정한 구현체를 만들 수 있는 다양한 
+	  팩토리(Creator)를 제공할 수 있다. 
+```
