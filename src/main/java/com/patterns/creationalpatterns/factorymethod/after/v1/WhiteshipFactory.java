@@ -1,4 +1,4 @@
-package com.patterns.creationalpatterns.factorymethod.after;
+package com.patterns.creationalpatterns.factorymethod.after.v1;
 
 public class WhiteshipFactory implements ShipFactory {
 
