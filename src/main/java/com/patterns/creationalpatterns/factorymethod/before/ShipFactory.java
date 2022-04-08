@@ -1,4 +1,4 @@
-package com.patterns.creationalpatterns.factorymethod;
+package com.patterns.creationalpatterns.factorymethod.before;
 
 public class ShipFactory {
 
