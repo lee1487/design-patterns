@@ -102,4 +102,11 @@ https://codingdog.tistory.com/entry/java-synchronized-%EB%9D%BD%EC%9D%B4-%EC%96%
 	- 개방 폐쇄 원칙은 기존 코드를 변경하지 않으면서(Close) 기능을 추가(Open)할 수 있도록 설계가 되어야 한다는 원칙입니다.
   - 자바 8에 추가된 default 메소드에 대해 설명하세요.
     - 디폴트 메서드를 이용하면 인터페이스의 기본 구현을 그대로 상속하므로 인터페이스에 자유롭게 새로운 메서드를 추가할 수 있게된다. 
+
+실무에서는 어떻게 쓰이나? 
+  - 단순한 팩토리 패턴 
+    - 매개변수의 값에 따라 또는 메소드에 따라 각기 다른 인스턴스를 리턴하는 단순한 버전의 팩토리 패턴 
+	- java.lang.Calendar 또는 java.lang.NumberFormat 
+  - 스프링 BeanFactory 
+    - Object 타입의 Product를 만드는 BeanFactory라는 Creator
 ```
