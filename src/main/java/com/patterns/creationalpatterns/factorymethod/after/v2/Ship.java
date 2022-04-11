@@ -1,11 +1,28 @@
 package com.patterns.creationalpatterns.factorymethod.after.v2;
 
+import com.patterns.creationalpatterns.abstractfactory.after.Anchor;
+import com.patterns.creationalpatterns.abstractfactory.after.Wheel;
+
 public class Ship {
 
 	private String name;
 	private String color;
 	private String logo;
-
+	private Wheel wheel;
+	private Anchor anchor;
+	
+	public Wheel getWheel() {
+		return wheel;
+	}
+	public void setWheel(Wheel wheel) {
+		this.wheel = wheel;
+	}
+	public Anchor getAnchor() {
+		return anchor;
+	}
+	public void setAnchor(Anchor anchor) {
+		this.anchor = anchor;
+	}
 	public String getName() {
 		return name;
 	}

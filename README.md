@@ -110,3 +110,10 @@ https://codingdog.tistory.com/entry/java-synchronized-%EB%9D%BD%EC%9D%B4-%EC%96%
   - 스프링 BeanFactory 
     - Object 타입의 Product를 만드는 BeanFactory라는 Creator
 ```
+
+### 추상 팩토리 패턴 
+```
+추상 팩토리 패턴 
+  - 서로 관련있는 여러 객체를 만들어주는 인터페이스 
+    - 구체적으로 어떤 클래스의 인스턴스를(concrete product)를 사용하는지 감출 수 있다.
+```
