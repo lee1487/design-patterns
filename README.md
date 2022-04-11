@@ -116,4 +116,7 @@ https://codingdog.tistory.com/entry/java-synchronized-%EB%9D%BD%EC%9D%B4-%EC%96%
 추상 팩토리 패턴 
   - 서로 관련있는 여러 객체를 만들어주는 인터페이스 
     - 구체적으로 어떤 클래스의 인스턴스를(concrete product)를 사용하는지 감출 수 있다.
+
+추상 팩토리 패턴 구현 방법 
+  - 클라이언트 코드에서 구체적인 클래스의 의존성을 제거한다. 
 ```
