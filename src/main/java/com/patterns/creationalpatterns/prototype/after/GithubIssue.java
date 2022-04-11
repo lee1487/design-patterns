@@ -59,5 +59,10 @@ public class GithubIssue implements Cloneable{
 		return id == that.id && Objects.equals(title, that.title) && Objects.equals(repository, that.repository);
 	}
 	
+	@Override
+	public int hashCode() {
+		return Objects.hash(id, title, repository);
+	}
+	
 	
 }
