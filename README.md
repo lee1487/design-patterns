@@ -241,3 +241,11 @@ https://codingdog.tistory.com/entry/java-synchronized-%EB%9D%BD%EC%9D%B4-%EC%96%
   - 단점 
     - 퍼사드 클래스가 서브 시스템에 대한 모든 의존성을 가지게 된다.
 ```
+
+### 플라이웨이트 패턴 
+```
+플라이웨이트(Flyweight) 패턴 
+  - 객체를 가볍게 만들어 메모리 사용을 줄이는 패턴 
+    - 자주 변하는 속성(또는 외적인 속성, extrinsit)과 변하지 않는 
+	  속성(또는 내적인 속성, intrinsit)을 분리하고 재사용하여 메모리 사용을 줄일 수 있다. 
+```
