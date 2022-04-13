@@ -248,4 +248,9 @@ https://codingdog.tistory.com/entry/java-synchronized-%EB%9D%BD%EC%9D%B4-%EC%96%
   - 객체를 가볍게 만들어 메모리 사용을 줄이는 패턴 
     - 자주 변하는 속성(또는 외적인 속성, extrinsit)과 변하지 않는 
 	  속성(또는 내적인 속성, intrinsit)을 분리하고 재사용하여 메모리 사용을 줄일 수 있다. 
+
+  - 장점 
+    - 애플리케이션에서 사용하는 메모리를 줄일 수 있다. 
+  - 단점 
+    - 코드의 복잡도가 증가한다.
 ```
