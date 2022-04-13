@@ -1,4 +1,4 @@
-package com.patterns.structuralpatterns.facade.before;
+package com.patterns.structuralpatterns.facade.after;
 
 import java.util.Properties;
 
@@ -9,24 +9,29 @@ import javax.mail.Transport;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 
-public class Client {
+public class EmailSender {
 
-	public static void main(String[] args) {
+	private EmailSettings emailSettings;
+
+	public EmailSender(EmailSettings emailSettings) {
+		this.emailSettings = emailSettings;
+	}
+	
+	public void sendEmail(EmailMessage emailMessage) {
 		String to = "keesun@whiteship.me";
 		String from = "dlgustp1487@naver.com";
-		String host = "127.0.0.1";
 		
 		Properties properties = System.getProperties();
-		properties.setProperty("mail.smtp.host", host);
+		properties.setProperty("mail.smtp.host", emailSettings.getHost());
 		
 		Session session = Session.getDefaultInstance(properties);
 		
 		try {
 			MimeMessage message = new MimeMessage(session);
-			message.setFrom(new InternetAddress(from)); 
-			message.addRecipient(Message.RecipientType.TO, new InternetAddress(to));
-			message.setSubject("Test Mail from Java Program");
-			message.setText("message");
+			message.setFrom(new InternetAddress(emailMessage.getFrom())); 
+			message.addRecipient(Message.RecipientType.TO, new InternetAddress(emailMessage.getTo()));
+			message.setSubject(emailMessage.getSubject());
+			message.setText(emailMessage.getText());
 			
 			Transport.send(message);
 		} catch (MessagingException e) {
