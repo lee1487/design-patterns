@@ -299,3 +299,10 @@ https://codingdog.tistory.com/entry/java-synchronized-%EB%9D%BD%EC%9D%B4-%EC%96%
   - 단점 
     - 코드가 복잡하고 클래스가 많아진다.
 ```
+
+### 인터프리터 패턴 
+```
+인터프리터(Interpreter) 패턴
+  - 자주 등장하는 문제를 간단한 언어로 정의하고 재사용하는 패턴 
+    - 반복되는 문제 패턴을 언어 또는 문법으로 정의하고 확장할 수 있다. 
+```
