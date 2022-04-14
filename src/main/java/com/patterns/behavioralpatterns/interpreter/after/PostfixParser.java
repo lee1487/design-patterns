@@ -1,6 +1,7 @@
 package com.patterns.behavioralpatterns.interpreter.after;
 
 import static com.patterns.behavioralpatterns.interpreter.after.PostfixExpression.minus;
+import static com.patterns.behavioralpatterns.interpreter.after.PostfixExpression.multiply;
 import static com.patterns.behavioralpatterns.interpreter.after.PostfixExpression.plus;
 import static com.patterns.behavioralpatterns.interpreter.after.PostfixExpression.variable;
 
@@ -25,6 +26,10 @@ public class PostfixParser {
 			PostfixExpression right = stack.pop();
 			PostfixExpression left = stack.pop();
 			return minus(left, right);
+		case '*':
+			right = stack.pop();
+			left = stack.pop();
+			return multiply(left, right) ;
 			
 		default:
 			return variable(c);
