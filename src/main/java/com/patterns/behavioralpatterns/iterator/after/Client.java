@@ -1,8 +1,10 @@
-package com.patterns.behavioralpatterns.iterator.before;
+package com.patterns.behavioralpatterns.iterator.after;
 
 import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
+
+import com.patterns.behavioralpatterns.iterator.before.Post;
 
 public class Client {
 
@@ -27,10 +29,9 @@ public class Client {
         }
         
         //TODO 가장 최신 글 먼저 순회하기
-        Collections.sort(posts, (p1, p2)-> p2.getCreatedDateTime().compareTo(p1.getCreatedDateTime()));
-        for (int i=0; i<posts.size(); i++) {
-        	Post post = posts.get(i);
-        	System.out.println(post.getTitle());
+        Iterator<Post> recentPostIterator = board.getRecentPostIterator();
+        while(recentPostIterator.hasNext()) {
+        	System.out.println(recentPostIterator.next().getTitle());
         }
 	}
 }
