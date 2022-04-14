@@ -268,3 +268,10 @@ https://codingdog.tistory.com/entry/java-synchronized-%EB%9D%BD%EC%9D%B4-%EC%96%
   - 단점 
     - 코드의 복잡도가 증가한다.
 ```
+
+### 책임 연쇄 패턴 
+```
+책임 연쇄 패턴(Chain-of-Responsibility) 패턴 
+  - 요청을 보내는 쪽(sender)과 요청을 처리하는 쪽(receiver)을 분리하는 패턴 
+    - 핸들러 체인을 사용해서 요청을 처리한다. 
+```
