@@ -328,3 +328,10 @@ https://codingdog.tistory.com/entry/java-synchronized-%EB%9D%BD%EC%9D%B4-%EC%96%
   - 단점 
     - 클래스가 늘어나고 복잡도가 증가한다. 
 ```
+
+### 중재자 패턴 
+```
+중재자(Mediator) 패턴 
+  - 여러 객체들이 소통하는 방법을 캡슐화하는 패턴 
+    - 여러 컴포넌트간의 결합도를 중재자를 통해 낮출 수 있다. 
+```
