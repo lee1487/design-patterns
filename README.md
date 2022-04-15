@@ -358,3 +358,10 @@ https://codingdog.tistory.com/entry/java-synchronized-%EB%9D%BD%EC%9D%B4-%EC%96%
     - 많은 정보를 저장하는 Mementor를 자주 생성하는 경우 메모리 사용량에 
 	  많은 영향을 줄 수 있다. 
 ```
+
+### 옵저버 패턴 
+```
+옵저버(Observer) 패턴 
+  - 다수의 객체가 특정 객체 상태 변화를 감지하고 알림을 받는 패턴 
+    - 발행(publish)-구독(subscribe) 패턴을 구현할 수 있다. 
+```
