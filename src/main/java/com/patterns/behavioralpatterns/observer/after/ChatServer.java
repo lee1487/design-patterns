@@ -21,7 +21,12 @@ public class ChatServer {
 	
 	public void unregister(String subject, Subscriber subscriber) {
 		if (this.subscribers.containsKey(subject)) {
-			this.subscribers.get(subject).remove(subscriber);
+			if(this.subscribers.get(subject).size()==1) {
+				this.subscribers.get(subject).remove(0);
+			} else {
+				this.subscribers.get(subject).remove(subscriber);
+			}
+			
 		}
 	}
 	
