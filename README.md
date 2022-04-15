@@ -375,3 +375,11 @@ https://codingdog.tistory.com/entry/java-synchronized-%EB%9D%BD%EC%9D%B4-%EC%96%
     - 복잡도가 증가한다. 
 	- 다수의 Observer 객체를 등록 이후 해지하지 않으면 memory leak이 발생할 수도 있다. 
 ```
+
+### 상태 패턴 
+```
+상태(State) 패턴 
+  - 객체 내부 상태 변경에 따라 객체의 행동이 달라지는 패턴 
+    - 상태에 특화된 행동들을 분리해 낼 수 있으며, 새로운 행동을 추가하더라도 
+	  다른 행동에 영향을 주지 않는다. 
+```
