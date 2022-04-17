@@ -391,3 +391,10 @@ https://codingdog.tistory.com/entry/java-synchronized-%EB%9D%BD%EC%9D%B4-%EC%96%
   - 단점 
     - 복잡도가 증가한다.
 ```
+
+### 전략 패턴 
+```
+전략(Strategy) 패턴 
+  - 여러 알고리즘을 캡슐화 하고 상호 교환을 가능하게 만드는 패턴 
+    - 컨텍스트에서 사용할 알고리즘을 클라이언트가 선택한다.
+```
