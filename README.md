@@ -413,4 +413,8 @@ https://codingdog.tistory.com/entry/java-synchronized-%EB%9D%BD%EC%9D%B4-%EC%96%
 템플릿 메소드(Template method) 패턴 
   - 알고리즘 구조를 서브 클래스가 확장할 수 있도록 템플릿으로 제공하는 방법 
     - 추상 클래스는 템플릿을 제공하고 하위 클래스는 구체적인 알고리즘을 제공한다. 
+
+템플릿 콜백(Template-Callback) 패턴 
+  - 콜백으로 상속 대신 위임을 사용하는 템플릿 패턴 
+    - 상속 대신 익명 내부 클래스 또는 람다 표현식을 활용할 수 있다.
 ```

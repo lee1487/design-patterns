@@ -1,14 +1,14 @@
-package com.patterns.behavioralpatterns.template.before;
+package com.patterns.behavioralpatterns.template.after;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 
-public class MultuplyFileProcessor {
+public abstract class FileProcessor {
 
 	private String path;
 
-	public MultuplyFileProcessor(String path) {
+	public FileProcessor(String path) {
 		this.path = path;
 	}
 	
@@ -17,13 +17,15 @@ public class MultuplyFileProcessor {
 			int result = 0;
 			String line = null;
 			while((line = reader.readLine()) != null) {
-				result *= Integer.parseInt(line);
+				result = getResult(result, Integer.parseInt(line));
 			}
 			return result;
 		} catch (IOException e) {
 			throw new IllegalArgumentException(path + "에 해당하는 파일이 없습니다.",e);
 		}
 	}
+
+	protected abstract int getResult(int result, int number);
 	
 	
 }
