@@ -426,3 +426,10 @@ https://codingdog.tistory.com/entry/java-synchronized-%EB%9D%BD%EC%9D%B4-%EC%96%
     - 리스코프 치환 원칙을 위반할 수도 있다. 
 	- 알고리즘 구조가 복잡할 수록 템플릿을 유지하기 어려워진다.
 ```
+
+### 방문자 패턴 
+```
+방문자(Visitor) 패턴 
+  - 기존 코드를 변경하지 않고 새로운 기능을 추가하는 방법 
+    - 더블 디스패치(Double Dispatch)를 활용할 수 있다.
+```
