@@ -440,4 +440,5 @@ https://codingdog.tistory.com/entry/java-synchronized-%EB%9D%BD%EC%9D%B4-%EC%96%
   - 단점 
     - 복잡하다 
 	- 새로운 Element를 추가하거나 제거할 때 모든 Visitor 코드를 변경해야 한다. 
+  6월7일 의미없는 커밋
 ```
